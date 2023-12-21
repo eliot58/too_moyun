@@ -49,7 +49,7 @@ const Header: FC = () => {
       ) : size.width >= 1024 ? (
         <div className="flex flex-col justify-center align-middle">
           <h1 className="text-3xl text-gold-text font-bold">
-            “Тоо-Моюн ” айыл аймагынын расмий сайты
+            “Төө-Моюн” айылдык аймагынын расмий баракчасы
           </h1>
           <div className="absolute left-0 top-0">
             <Image src="/headerleft.png" alt="" width={90} height={90} />
@@ -57,7 +57,6 @@ const Header: FC = () => {
           <div className="absolute right-0 bottom-0">
             <Image src="/right-heder.png" alt="" width={90} height={90} />
           </div>
-		  <p className="text-navColor text-xl self-end mr-24">+996 755 77 00 93</p>
         </div>
       ) : (
         <></>
@@ -118,7 +117,7 @@ const Header: FC = () => {
                   pathname === "/photoGallery" ? linkStyleActive : linkStyle
                 }
               >
-                Фотогалерея
+                Сүрөттөр
               </Link>
             </div>
           ) : (
@@ -145,20 +144,12 @@ const Header: FC = () => {
                       Жарыялар
                     </Link>
                     <Link
-                      href="/newsPage"
-                      className={
-                        pathname === "/newsPage" ? linkStyleActive : linkStyle
-                      }
-                    >
-                      Пресса
-                    </Link>
-                    <Link
                       href="/malymattar"
                       className={
                         pathname === "/malymattar" ? linkStyleActive : linkStyle
                       }
                     >
-                      Маалытматтар
+                      Маалыматтар
                     </Link>
                     <Link
                       href="/download"
